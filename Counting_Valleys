@@ -1,0 +1,15 @@
+
+
+#Counting Valleys problem
+
+
+def countingValleys(n, s):
+    l=v=0           #  l=level v= valley
+    for i in s:
+        if i == 'U':
+            l+=1
+            if l == 0:
+                v+=1
+        else:
+            l=l+(-1)
+    return v
